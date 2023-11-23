@@ -39,6 +39,7 @@ To utilize this function, use the following syntax: _printf("format string", arg
 •	Your code will be compiled this way:
 
 ```
+![printf diagram](https://github.com/Abbassimedayoub/holbertonschool-printf/assets/134635340/cc24f45d-c27f-470d-94d1-ebb18f52d0b4)
 
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
