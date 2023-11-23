@@ -1,7 +1,7 @@
 ![Logo](https://uploads-ssl.webflow.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton.png)
 
 # **C – printf**
-<div style="text-align:center"><img src="[https://github.com/Abbassimedayoub/holbertonschool-printf/assets/134635340/cc24f45d-c27f-470d-94d1-ebb18f52d0b4](https://github.com/Abbassimedayoub/holbertonschool-printf/assets/141949137/32e079e4-40d7-42c1-8ddd-627d41e0504f)" /></div>
+<div style="text-align:center"><img src="https://github.com/Abbassimedayoub/holbertonschool-printf/assets/141949137/32e079e4-40d7-42c1-8ddd-627d41e0504f" /></div>
 
 ## **Description**
 This repository hosts an updated implementation of the _printf() function within the standard library (stdio.h).I
