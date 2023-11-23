@@ -1,6 +1,7 @@
 ![Logo](https://uploads-ssl.webflow.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton.png)
-<div style="text-align:center"><img src="https://github.com/Abbassimedayoub/holbertonschool-printf/assets/134635340/cc24f45d-c27f-470d-94d1-ebb18f52d0b4" /></div>
+
 # **C – printf**
+<div style="text-align:center"><img src="https://github.com/Abbassimedayoub/holbertonschool-printf/assets/134635340/cc24f45d-c27f-470d-94d1-ebb18f52d0b4" /></div>
 ## **Description**
 This repository hosts an updated implementation of the _printf() function within the standard library (stdio.h).I
 Its primary objective is to output text along with an unlimited number of variables in accordance with specific formatting rules.
