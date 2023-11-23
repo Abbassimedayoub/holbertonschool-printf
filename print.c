@@ -57,26 +57,26 @@ int print_pct(va_list args)
  */
 int print_dec(va_list args)
 {
-	long int n;
-	int len = 0;
-	long int div = 1;
+    long int n;
+    int len = 0;
+    long int divisor = 1;
 
-	n = va_arg(args, int);
-	if (n < 0)
-	{
-		len += putchar('-');
-		n *= -1;
-	}
+    n = va_arg(args, int);
 
-	while ((n / div) > 9)
-		div *= 10;
-
-	while (div != 0)
-	{
-		len += putchar((n / div) + '0');
-		n %= div;
-		div /= 10;
-	}
-	return (len);
-
+    if (n < 0) {
+        putchar('-');
+        len++;
+        n = -n;
+    }
+    while ((n / divisor) >= 10) {
+        divisor *= 10;
+    }
+    while (divisor > 0) {
+        putchar((n / divisor) + '0');
+        len++;
+        n %= divisor;
+        divisor /= 10;
+    }
+    return len;
 }
+
