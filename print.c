@@ -55,35 +55,28 @@ int print_pct(va_list args)
  *
  * Return: counter
  */
-
 int print_dec(va_list args)
 {
-	int value;
-	unsigned int abs, a, len;
-	unsigned int countn = 1;
+	long int n;
+	int len = 0;
+	long int div = 1;
 
-	len = 0;
-	value = va_arg(args, int);
-
-	if (value < 0)
+	n = va_arg(args, int);
+	if (n < 0)
 	{
-		len = len + putchar('-');
-		abs = value * (-1);
-	}
-	else
-		abs = value;
-
-	a = abs;
-	while (a > 9)
-	{
-		a = a / 10;
-		countn = countn * 10;
-	}
-	while (countn >= 1)
-	{
-		len = len + putchar(((abs / countn) % 10) + '0');
-		countn = countn / 10;
+		len += putchar('-');
+		n *= -1;
 	}
 
+	while ((n / div) > 9)
+		div *= 10;
+
+	while (div != 0)
+	{
+		len += putchar((n / div) + '0');
+		n %= div;
+		div /= 10;
+	}
 	return (len);
+
 }
