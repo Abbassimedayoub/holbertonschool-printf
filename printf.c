@@ -25,9 +25,12 @@ int _printf(const char *format, ...)
 			putchar(format[i]);
 			length++;
 		}
-
 		else
 		{
+			if (format[i + 1] == '\0') {
+				putchar('%');
+				length++;
+				break;
 			if (format[i + 1] == 'c' || format[i + 1] == 's'
 			|| format[i + 1] == '%' || format[i + 1] == 'd' ||
 			format[i + 1] == 'i')
