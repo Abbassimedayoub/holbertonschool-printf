@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * printf - function that prints a variable number of arguments
+ * _printf - function that prints a variable number of arguments
  * @format: pointer to character
  * Return: an integer (the number of printed arguments)
  */

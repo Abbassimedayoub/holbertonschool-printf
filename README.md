@@ -1,4 +1,3 @@
-
 ![Logo](https://uploads-ssl.webflow.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton.png)
 
 # **C – printf**
@@ -36,7 +35,7 @@ To utilize this function, use the following syntax: _printf("format string", arg
   - `va_end` (`man 3 va_end`)
   - `va_copy` (`man 3 va_copy`)
   - `va_arg` (`man 3 va_arg`)
-## **Compilation** 
+## **Compilation**
 •	Your code will be compiled this way:
 
 ```
