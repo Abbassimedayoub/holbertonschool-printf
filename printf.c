@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 	i = 0;
 	length = 0;
 	va_start(args, format);
-	if (format == NULL || format[0] == '\0')
+	if (format == NULL)
 	{
 		return (-1);
 	}
@@ -35,8 +35,8 @@ int _printf(const char *format, ...)
 			}
 
 			if (format[i + 1] == 'c' || format[i + 1] == 's'
-					|| format[i + 1] == '%' || format[i + 1] == 'd' ||
-					format[i + 1] == 'i')
+					|| format[i + 1] == '%' || format[i + 1] == 'd'
+					|| format[i + 1] == 'i')
 			{
 				func = get_func(&format[i + 1]);
 				length += func(args);
