@@ -32,15 +32,12 @@ To print a string:
 To print an integer:
 .br
 \fBint num = 42;\fR
- 
 \fB  _printf("The answer is %d\n", num);\fR
 .pp
 .SH SEE ALSO
 \fBprintf(3)\fR, \fBfprintf(3)\fR, \fBsprintf(3)\fR, \fBsnprintf(3)\fR
-
 .SH BUGS
 The \fB_printf()\fR function  ahs no bugs reported up to this moment
-
 .SH AUTHOR
 ABBASSI Mohamed Ayoub
 Fanuel Pierre
