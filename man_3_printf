@@ -1,0 +1,43 @@
+.TH PRINTF 3 "NOVEMBER 2023" "Linux Programmer's Manual"
+./"manual page of the function _printf
+.SH name
+\fB _printf
+.SH Prototype
+\fB int  _printf(const char *format, ...);\fR
+
+.SH DESCRIPTION
+The \fB_printf()\fR function prints formatted output to the standard output (stdout).
+
+.SH RETURN VALUE
+Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings). If an output error is encountered, a negative value is returned.
+
+.SH FORMAT SPECIFIERS
+The \fBformat\fR argument is a string that may contain format specifiers. Each format specifier begins with a percent sign (%) and is followed by one or more format characters.
+.PP
+\fB%d, %i\fR - Signed decimal integer
+
+.PP
+\fB%c\fR - Character
+.PP
+\fB%s\fR - String
+
+.PP
+\fB%%\fR - Percent sign
+
+.SH EXAMPLES
+To print a string:
+.br
+\fB _printf("Hello, world!");\fR
+.PP
+To print an integer:
+.br
+\fBint num = 42;\fR
+\fB  _printf("The answer is %d\n", num);\fR
+.pp
+.SH SEE ALSO
+\fBprintf(3)\fR, \fBfprintf(3)\fR, \fBsprintf(3)\fR, \fBsnprintf(3)\fR
+.SH BUGS
+The \fB_printf()\fR function  ahs no bugs reported up to this moment
+.SH AUTHOR
+ABBASSI Mohamed Ayoub
+Fanuel Pierre
