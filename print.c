@@ -57,37 +57,27 @@ int print_dec(va_list args)
 
 	n = va_arg(args, int);
 
-<<<<<<< HEAD
-	if (n < 0) {
-=======
 	if (n < 0)
 	{
->>>>>>> dccdec8585299fedb3cf9ab202a724c87595cf5a
 		putchar('-');
 		len++;
 		n = -n;
 	}
-<<<<<<< HEAD
-	while ((n / divisor) >= 10) {
-		divisor *= 10;
-	}
-	while (divisor > 0) {
-=======
 	while ((n / divisor) >= 10)
 	{
 		divisor *= 10;
 	}
 	while (divisor > 0)
 	{
->>>>>>> dccdec8585299fedb3cf9ab202a724c87595cf5a
+		divisor *= 10;
+	}
+	while (divisor > 0)
+	{
 		putchar((n / divisor) + '0');
 		len++;
 		n %= divisor;
 		divisor /= 10;
 	}
-<<<<<<< HEAD
-	return len;
-=======
 	return (len);
->>>>>>> dccdec8585299fedb3cf9ab202a724c87595cf5a
+	}
 }
