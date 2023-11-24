@@ -2,6 +2,7 @@
 
 # **C – printf**
 <div style="text-align:center"><img src="https://github.com/Abbassimedayoub/holbertonschool-printf/assets/134635340/17a2e6bf-f951-4717-8d46-807435101828" /></div>
+
 ## **Description**
 This repository hosts an updated implementation of the _printf() function within the standard library (stdio.h).I
 Its primary objective is to output text along with an unlimited number of variables in accordance with specific formatting rules.
