@@ -46,3 +46,4 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ## Authors
 - [abbassi mohamed ayoub](https://www.github.com/abbassimedayoub)
 - [Fanuel Pierre](https://www.github.com/Fpierr)
+- [Sabrine Zaghouani](https://www.github.com/Sabrinetj)
