@@ -37,8 +37,6 @@ int _printf(const char *format, ...)
 			if (format[i + 1] == 'c' || format[i + 1] == 's'
 					|| format[i + 1] == '%' || format[i + 1] == 'd' ||
 					format[i + 1] == 'i')
-					|| format[i + 1] == '%' || format[i + 1] == 'd'
-					|| format[i + 1] == 'i')
 			{
 				func = get_func(&format[i + 1]);
 				length += func(args);
